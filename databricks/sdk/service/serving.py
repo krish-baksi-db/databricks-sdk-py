@@ -4598,6 +4598,10 @@ class ServingEndpointsAPI:
         response_headers = [
             "served-model-name",
         ]
+
+        print(f"body: {body}")
+
+        
         res = self._api.do(
             "POST",
             f"/serving-endpoints/{name}/invocations",
